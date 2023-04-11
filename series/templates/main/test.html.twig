@@ -8,6 +8,30 @@
     <title>Series !</title>
 </head>
 <body>
-<h1>test</h1>
+    <h1>test</h1>
+    <div>
+        {# crée une variable #}
+        {% set name = "Guillaume" %}
+        <h2>{{ name }}</h2>
+
+        {# crée un tableau #}
+        {% set colors = ["orange", "brown", "turquoise", "blue"] %}
+        {% for color in colors %}
+            <div style="background-color: {{ color }}">{{ color }}</div>
+        {% endfor %}
+
+        {# un objet #}
+        {% set book = {
+            title: 'Pifpaf',
+            year: 2000,
+            author: "John Doe"}
+        %}
+        <h3>{{ book.author }}</h3>
+        <div>
+            {% for key, val in book %}
+                <div>{{ key }} : {{ val }}</div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>
