@@ -10,13 +10,21 @@
 <body>
     <h1>test</h1>
     <div>
+
+        <div>{{ "+1 year"|date('Y') }}</div>
+
         {# crée une variable #}
         {% set name = "Guillaume" %}
-        <h2>{{ name }}</h2>
+        <h2>{{ name|length }}</h2>
 
         {# crée un tableau #}
         {% set colors = ["orange", "brown", "turquoise", "blue"] %}
+
+        <div>nombre de couleurs : {{ colors|length }}</div>
+        <div>{{ colors|join(' / ') }}</div>
+
         {% for color in colors %}
+            <div>{{ loop.last }}</div>
             <div style="background-color: {{ color }}">{{ color }}</div>
         {% endfor %}
 
