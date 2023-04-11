@@ -19,7 +19,7 @@ class MainController extends AbstractController
      */
     public function test() {
         $serie = [
-            "title" => "Game of Thrones",
+            "title" => "<h1>Game of Thrones</h1>",
             "year" => 2000
         ];
 
