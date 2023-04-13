@@ -4,7 +4,7 @@
     <section class="wishes-list">
         <h2>All wishes !</h2>
         {% for wish in wishes %}
-            <div><a href="{{ path('wish_detail', {'id': wish.id}) }}" title="View wish details">{{ wish.title }}</a></div>
+            <div><a href="{{ path('wish_detail', {'id': wish.id}) }}" title="View wish details">{{ wish.title }} [{{ wish.category.name }}]</a></div>
         {% endfor %}
     </section>
 {% endblock %}

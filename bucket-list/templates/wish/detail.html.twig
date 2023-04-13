@@ -5,7 +5,7 @@ Titre de l'idée ici ! | {{ parent() }}
 {% endblock %}
 
 {% block body %}
-    <h2>{{ wish.title }}</h2>
+    <h2>{{ wish.title }} [{{ wish.category.name }}]</h2>
     <p class="wish-credit">Created by {{ wish.author }} on {{ wish.dateCreated|date("Y-m-d") }}</p>
     {# nl2br permet de convertir les sauts de ligne du texte en <br> #}
     <div>{{ wish.description|nl2br }}</div>
