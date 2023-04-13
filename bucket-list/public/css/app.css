@@ -62,3 +62,29 @@ main a {
     font-size: 0.9rem;
     font-style: italic;
 }
+.flash {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.flash-success {
+    background-color: #a2a232;
+}
+.flash-error {
+    background-color: #d4550e;
+}
+label {
+    display: block;
+}
+input, textarea {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+button {
+    padding: 0.5rem 0.7rem;
+    font-family: inherit;
+}
