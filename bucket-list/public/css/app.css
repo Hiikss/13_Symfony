@@ -89,3 +89,14 @@ button {
     padding: 0.5rem 0.7rem;
     font-family: inherit;
 }
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+.user-nav a {
+    margin-left: 1rem;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    flex: 1;
+}
